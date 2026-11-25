@@ -372,3 +372,8 @@ input[type=range] { width: min(260px, 60vw); accent-color: var(--c, var(--brand)
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .nl-jump { stroke-dashoffset: 0; }
 }
+
+/* Crawlable summary in index.html: hidden when JS runs (app.js replaces it), shown as a card without JS. */
+.js .seo-fallback { display: none; }
+.seo-fallback { max-width: 760px; margin: 32px auto; padding: 28px; background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); }
+.seo-fallback li { margin: .3em 0; }

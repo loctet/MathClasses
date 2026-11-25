@@ -74,7 +74,7 @@
 
   /* ---------------- home ---------------- */
   function homeView() {
-    document.title = 'MathQuest — Fun Maths for Kids';
+    document.title = 'MathQuest — Free Fun Maths Lessons for Kids, Nursery to Year 6';
     const cards = TOPICS.map((t) => {
       const locked = S.year < t.minYear || !skillsFor(t).length;
       const n = skillsFor(t).length;
