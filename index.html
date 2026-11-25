@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MathQuest — Fun Maths for Kids</title>
+  <meta name="description" content="Fun, visual maths lessons, games and real-life problems for primary school children, Year 1 to Year 6.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦉</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/widgets.css">
+</head>
+<body>
+  <div class="bg-blobs" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <header class="topbar">
+    <a href="#/" class="brand" aria-label="MathQuest home">
+      <span class="brand-logo">🦉</span>
+      <span class="brand-name">Math<span>Quest</span></span>
+    </a>
+    <div class="controls">
+      <label class="ctl">
+        <span class="ctl-label">Year</span>
+        <select id="yearSel" aria-label="School year">
+          <option value="0">Nursery</option>
+          <option value="1">Year 1</option>
+          <option value="2">Year 2</option>
+          <option value="3">Year 3</option>
+          <option value="4">Year 4</option>
+          <option value="5">Year 5</option>
+          <option value="6">Year 6</option>
+        </select>
+      </label>
+      <label class="ctl">
+        <span class="ctl-label">Money</span>
+        <select id="curSel" aria-label="Currency">
+          <option value="€">€ Euro</option>
+          <option value="$">$ Dollar</option>
+          <option value="£">£ Pound</option>
+        </select>
+      </label>
+      <button id="speakBtn" class="icon-btn" aria-label="Read questions aloud" title="Read aloud on/off">🗣️</button>
+      <button id="soundBtn" class="icon-btn" aria-label="Toggle sound" title="Sound on/off">🔊</button>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="footer">
+    <p>Made with 💜 by Elvis KONJOH for curious young mathematicians</p>
+  </footer>
+
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <script src="js/utils.js"></script>
+  <script src="js/visuals.js"></script>
+  <script src="js/widgets.js"></script>
+  <script src="js/topics/nursery.js"></script>
+  <script src="js/topics/placevalue.js"></script>
+  <script src="js/topics/arith.js"></script>
+  <script src="js/topics/muldiv.js"></script>
+  <script src="js/topics/money.js"></script>
+  <script src="js/topics/fractions.js"></script>
+  <script src="js/topics/negatives.js"></script>
+  <script src="js/topics/time.js"></script>
+  <script src="js/topics/measures.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
